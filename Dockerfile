@@ -8,8 +8,8 @@ COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-COPY exemplo.py .
+COPY app.py .
 
 EXPOSE 5000
 
-CMD python exemplo.py
+CMD python app.py
