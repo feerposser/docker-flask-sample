@@ -8,14 +8,15 @@ from flask_mongoengine import MongoEngine
 app = Flask(__name__)
 
 app.config["MONGODB_SETTINGS"] = {
-    "db": os.getenv("DATABASE_NAME", "atlecica"),
-    "host": os.getenv("DATABASE_HOST", "mongodb-atletica"),
-    "username": os.getenv("DATABASE_USER", "admin"),
-    "password": os.getenv("DATABASE_PASSWORD", "admin"),
+    "db": os.getenv("DATABASE_NAME", "atlecicaaa"),
+    "host": os.getenv("DATABASE_HOST", "mongodb-atleticaaa"),
+    "username": os.getenv("DATABASE_USER", "adminaa"),
+    "password": os.getenv("DATABASE_PASSWORD", "adminaa"),
     'authentication_source': 'admin'
 }
 
 db = MongoEngine()
+
 
 class EventoAtletica(db.Document):
     nome = db.StringField(required=True)
